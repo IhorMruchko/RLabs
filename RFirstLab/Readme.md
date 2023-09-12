@@ -165,7 +165,6 @@ library(MASS)
 ```
 
 ## Обрізати датафрейм за допомогою `sample`
-</details>
 
 ```R
 boston_varianted <- remove(Boston, percentage)
