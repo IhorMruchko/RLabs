@@ -14,8 +14,6 @@ print(paste0("Original auto dataframe rows:", nrow(auto)))
 auto_varianted <- remove(auto, percentage)
 print(paste0("Modified auto dataframe rows:", nrow(auto_varianted)))
 
-linear_model <- lm(auto_varianted$mpg ~ auto_varianted$weight)
-
 create_mlr(auto_varianted$mpg ~ auto_varianted$weight)
 plot(auto_varianted$mpg, auto_varianted$weight, col = "red", pch = 19, cex = 2)
 

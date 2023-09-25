@@ -204,11 +204,11 @@ print(median(boston_varianted$ptratio))
 **Які вквартали мають найбільше та найменше значення відношення учні-вчителі**
 
 ```R
-print(which.min(boston_varianted$ptratio))
-print(which.max(boston_varianted$ptratio))
+print(which(boston_varianted$ptratio == min(boston_varianted$ptratio)))
+print(which(boston_varianted$ptratio == max(boston_varianted$ptratio)))
 ```
 
->183 (12.60) </br>
+> 183 184 185 (12.60) </br>
 330 (22.00)
 
 **В яких кварталах в середньому є:**
